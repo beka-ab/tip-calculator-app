@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app | BitCamp</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="mhead">
+      <img src="./images/logo.svg" alt="" />
+    </header>
+    <div class="mmaindiv">
+      <section>
+        <div class="div_desctop">
+          <div class="mbill">
+            <div>
+              <p class="bil">Bill</p>
+              <div class="mdollar">
+                <span>
+                  <img src="./images/icon-dollar.svg" alt="" />
+                </span>
+
+                <input
+                  value=""
+                  class="inputfirst"
+                  type="number"
+                  placeholder="0.00"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="mselect">
+            <p class="mselecttxt">Select Tip %</p>
+            <div class="mbuttons">
+              <button class="btn same">5</button>
+              <button class="btn same">10%</button>
+              <button class="btn same active_btn different">15%</button>
+              <button class="btn same">25%</button>
+              <button class="btn same">50%</button>
+              <input
+                class="custom"
+                type="number"
+                name=""
+                id=""
+                placeholder="custom"
+                %
+              />
+            </div>
+          </div>
+          <div class="mnumber">
+            <div class="bottominputtxt">
+              <span class="mnumbertxt">Number of People</span>
+              <span class="hiddendiv"> Can’t be zero</span>
+            </div>
+            <div class="mdollar">
+              <span> <img src="/images/icon-person.svg" alt="" /></span>
+              <input value="" class="inputsecond" type="text" placeholder="1" />
+            </div>
+          </div>
+        </div>
+        <div class="div_desctopsec">
+          <div class="mtip">
+            <div class="mtipdiv">
+              <div class="tipamoun top">
+                <div class="tipperson">
+                  <p class="tip">Tip Amount</p>
+                  <p class="person">/ person</p>
+                </div>
+                <span class="dollars"> $0.00 </span>
+              </div>
+              <div class="tipamoun down">
+                <div class="totalperson">
+                  <p class="billTipAmount">Total</p>
+                  <p class="person">/ person</p>
+                </div>
+                <span class="dollarssec"> $0.00 </span>
+              </div>
+            </div>
+            <div class="resetDiv">
+              <button class="reset">RESET</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
