@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="icon"
       type="image/png"
@@ -12,87 +12,84 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | Tip calculator app | BitCamp</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
-    <header class="mhead">
-      <img src="./images/logo.svg" alt="" />
-    </header>
-    <div class="mmaindiv">
-      <section>
-        <div class="div_desctop">
-          <div class="mbill">
-            <div>
-              <p class="bil">Bill</p>
-              <div class="mdollar">
-                <span>
-                  <img src="./images/icon-dollar.svg" alt="" />
-                </span>
+    <nav><img class="img_logo" src="/images/logo.svg" alt="" /></nav>
+    <section class="mainsection">
+      <div class="left_div_desktop">
+        <div class="bill_area">
+          <div class="bill_input_up">
+            <span class="bill">bill</span>
+            <span class="hidden_bill_alert">
+              Max number of digits should be 4
+            </span>
+          </div>
 
-                <input
-                  value=""
-                  class="inputfirst"
-                  type="number"
-                  placeholder="0.00"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="mselect">
-            <p class="mselecttxt">Select Tip %</p>
-            <div class="mbuttons">
-              <button class="btn same">5</button>
-              <button class="btn same">10%</button>
-              <button class="btn same active_btn different">15%</button>
-              <button class="btn same">25%</button>
-              <button class="btn same">50%</button>
-              <input
-                class="custom"
-                type="number"
-                name=""
-                id=""
-                placeholder="custom"
-                %
-              />
-            </div>
-          </div>
-          <div class="mnumber">
-            <div class="bottominputtxt">
-              <span class="mnumbertxt">Number of People</span>
-              <span class="hiddendiv"> Can’t be zero</span>
-            </div>
-            <div class="mdollar">
-              <span> <img src="/images/icon-person.svg" alt="" /></span>
-              <input value="" class="inputsecond" type="text" placeholder="1" />
-            </div>
+          <div class="billinput_area">
+            <img class="icon" src="./images/icon-dollar.svg" alt="" />
+            <input class="bill_input" type="number" placeholder="0.00" />
           </div>
         </div>
-        <div class="div_desctopsec">
-          <div class="mtip">
-            <div class="mtipdiv">
-              <div class="tipamoun top">
-                <div class="tipperson">
-                  <p class="tip">Tip Amount</p>
-                  <p class="person">/ person</p>
-                </div>
-                <span class="dollars"> $0.00 </span>
-              </div>
-              <div class="tipamoun down">
-                <div class="totalperson">
-                  <p class="billTipAmount">Total</p>
-                  <p class="person">/ person</p>
-                </div>
-                <span class="dollarssec"> $0.00 </span>
-              </div>
-            </div>
-            <div class="resetDiv">
-              <button class="reset">RESET</button>
-            </div>
+        <div class="tips_area">
+          <span class="tip_text">Select Tip %</span>
+          <div class="tip_div">
+            <button class="btn">5%</button>
+            <button class="btn">10%</button>
+            <button class="btn active">15%</button>
+            <button class="btn">25%</button>
+            <button class="btn">50%</button>
+            <input
+              class="btn custompercentage"
+              type="number"
+              name=""
+              id=""
+              placeholder="CUSTOM"
+            />
           </div>
         </div>
-      </section>
-    </div>
-    <script src="./main.js"></script>
+        <div class="people_area">
+          <div class="bill_input_up">
+            <span class="tip_text">Number of People</span>
+            <span class="tip_text hidden_people_alert"
+              >Max number of digits should be 4</span
+            >
+            <span class="tip_text hidden_people_alert_Zero">
+              can't be zero</span
+            >
+          </div>
+
+          <div class="people_input">
+            <img class="icon" src="./images/icon-person.svg" alt="" />
+            <input
+              class="number_of_people"
+              type="number"
+              placeholder="1"
+              max="5"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="right_div_desktop">
+        <div class="for_sum">
+          <div class="sum_first_row">
+            <div class="tip_amount">
+              <p class="total_p">Tip Amount</p>
+              <p class="person">/ person</p>
+            </div>
+            <p class="tipamount_cash">$0.00</p>
+          </div>
+          <div class="sum_second_row">
+            <div class="total">
+              <p class="total_p">Total</p>
+              <p class="person">/ person</p>
+            </div>
+            <p class="total_cash">$0.00</p>
+          </div>
+          <div class="btn_div"><button class="reset_btn">RESET</button></div>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
   </body>
 </html>
