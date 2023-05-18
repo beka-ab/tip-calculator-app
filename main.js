@@ -76,12 +76,12 @@ function calculate() {
     if (tipPercentage > 0.01) {
       totaltip = (billvalue * tipPercentage) / people;
       tipAmount.innerHTML = "$" + totaltip.toFixed(2);
-      totalValue = parseFloat(totaltip) + parseFloat(billvalue);
+      totalValue = parseFloat(totaltip) + parseFloat(billvalue/people);
       total.innerHTML = "$" + totalValue.toFixed(2);
     } else {
       totaltip = (billvalue * custom) / people;
       tipAmount.innerHTML = "$" + totaltip.toFixed(2);
-      totalValue = parseFloat(totaltip) + parseFloat(billvalue);
+      totalValue = parseFloat(totaltip) + parseFloat(billvalue/people);
       total.innerHTML = "$" + totalValue.toFixed(2);
       console.log(totaltip + billvalue);
     }
